@@ -15,4 +15,17 @@ body {
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   display: inline-block;
+  transition: background-color 0.3s ease;
 }
+
+#loader {
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+

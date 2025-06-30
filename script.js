@@ -65,3 +65,25 @@ function traducirStat(statName) {
   };
   return traducciones[statName] || statName;
 }
+function SetColorCard(type){
+  const color = {
+    fire: "#FDDFDF",
+    grass: "#DEFDE0",
+    electric: "#FCF7DE",
+    water: "#DEF3FD",
+    ground: "#f4e7da",
+    rock: "#d5d5d4",
+    fairy: "#fceaff",
+    poison: "#e0bbe4",
+    bug: "#f8d5a3",
+    dragon: "#97b3e6",
+    psychic: "#eaeda1",
+    flying: "#F5F5F5",
+    fighting: "#E6E0D4",
+    normal: "#F5F5F5",
+    ghost: "#dbb2ff",
+    steel: "#e6eaf0",
+    dark: "#a9a9a9",
+    ice: "#e0f5ff"
+  }
+};
