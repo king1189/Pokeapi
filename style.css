@@ -139,4 +139,64 @@ button {
 button:hover {
   background-color: #45a049;
 }
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode .navbar {
+  background-color: #222;
+  color: #f0f0f0;
+}
+
+body.dark-mode .nav-links a {
+  color: #f0f0f0;
+}
+
+body.dark-mode .nav-links a:hover {
+  color: #00bcd4;
+}
+
+body.dark-mode input[type="text"] {
+  background-color: #333;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
+
+body.dark-mode button {
+  background-color: #555;
+  color: #f0f0f0;
+}
+
+body.dark-mode button:hover {
+  background-color: #777;
+}
+
+body.dark-mode .theme-switcher button {
+  background-color: #666;
+}
+
+body.dark-mode .theme-switcher button:hover {
+  background-color: #888;
+}
+
+body.dark-mode #loader {
+  color: #f0f0f0;
+}
+
+body.dark-mode .stat-bar {
+  background-color: #666;
+}
+
+body.dark-mode #pokemonContainer {
+  color: #333 !important;
+}
+
+body.dark-mode #pokemonContainer h2,
+body.dark-mode #pokemonContainer p,
+body.dark-mode #pokemonContainer span,
+body.dark-mode #pokemonContainer strong {
+  color: #333 !important;
+}
+
 
