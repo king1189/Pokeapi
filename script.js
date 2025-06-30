@@ -16,6 +16,39 @@ async function buscarPokemon() {
     container.innerHTML = `<p>Pokémon no encontrado. Intenta con otro nombre o número.</p>`;
   }
 }
+function setTheme(themeClass) {
+  document.body.className = themeClass;
+  localStorage.setItem('theme', themeClass); 
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const dayModeButton = document.getElementById('dayModeButton');
+  const nightModeButton = document.getElementById('nightModeButton');
+
+  if (dayModeButton) {
+    dayModeButton.addEventListener('click', () => setTheme('')); 
+  }
+
+  if (nightModeButton) {
+    nightModeButton.addEventListener('click', () => setTheme('dark-mode'));
+  }
+
+  
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    document.body.className = savedTheme;
+  } else {
+   
+    document.body.className = '';
+  }
+
+ 
+  buscarPokemon();
+});
+
+
+
 
 function mostrarPokemon(data) {
   const container = document.getElementById('pokemonContainer');
