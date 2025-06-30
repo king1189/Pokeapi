@@ -28,4 +28,32 @@ body {
 .hidden {
   display: none;
 }
+.stat {
+  text-align: left;
+  margin: 12px 0;
+}
+
+.stat-header {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.stat-bar {
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  height: 16px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.stat-fill {
+  height: 100%;
+  border-radius: 6px;
+  width: 0; 
+  transition: width 1s ease-out;
+}
+
+.hidden {
+  display: none;
+}
 
